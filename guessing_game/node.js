@@ -5,17 +5,17 @@ console.log(randomNumberElement);
 
 function submitBtn(){
     let guessNumberValue = guessNumberElement.value;
-    let randomNumberElements = parseInt(randomNumberElement)
+    let guessNumberElements = parseInt(guessNumberValue);
 
-    if (randomNumberElements > guessNumberValue) {
+    if (randomNumberElement > guessNumberElements) {
         outPutElement.textContent = "Guessed Number is too Low! Try Again";
     }
 
-    else if (randomNumberElements < guessNumberValue) {
+    else if (randomNumberElement < guessNumberElements) {
         outPutElement.textContent = "Guessed Number is too High! Try Again";
     }
 
-    else if (randomNumberElements === guessNumberValue) {
-        outPutElement.textContent = "Guessed number is correct"
+    else if (randomNumberElement === guessNumberElements) {
+        outPutElement.textContent = "Guessed number is correct";
     }
 }
